@@ -135,7 +135,7 @@
       <p>
        The following diagram illustrates the Functional Components and Interfaces of WoT
       </p>
-      <img src="./swot-model.png" width=1024 border=0>
+      <img src="./swot-model.png" width="800" border=0>
 	</section>
 	</section>
 
@@ -216,7 +216,7 @@
  	<section>    	
 	 <h3>Interface Definitions – WOT1</h3>
 	<p>This interface is exposed by the WAFG to User Agent. </p>
-	<ol>
+	<ul>
 		<li>WAFG and UA SHALL support general web standards (e.g: HTTP, URI, HTML)</li>
 		<li>WAFG SHALL support web standard based User Interface </li>
 		<ol>
@@ -239,7 +239,7 @@
 			<li>WAFG SHALL support [@@@] to …. </li>		
 			</ol>
 		</ol>
-	</ol>
+	</ul>
 	</section>
 
 	<section>
