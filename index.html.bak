@@ -223,7 +223,6 @@
 			<li>Shall provide the offline connectivity</li>
 			<li>shall provide capabilities to start and monitor all of WoT application feature</li>
 			</ol>
-		</ol>
 		<li>WAFG SHALL support WoT Gateway functionality such as:	</li>
 		<ol>
 			<li>Connectivity down to sensors and existing controllers embedded in the device</li>
@@ -235,7 +234,7 @@
 		<ol>
 		  <li>Connectivity up to the cloud and enterprise</li>
 		  <li>	WAFG SHALL further support the protocols defined in the following</li>
-•		 <ol>
+		<ol>
 			<li>WAFG SHALL support [@@@] to …. </li>		
 			</ol>
 		</ol>
