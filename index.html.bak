@@ -217,7 +217,7 @@
       </p>
 	
  	<section>    	
-	 <h3>Interface Definitions – WOT1</h3>
+	 <h3>Interface – WOT1</h3>
 	<p>This interface is exposed by the WAFG to User Agent. </p>
 	<ul>
 		<li>WAFG and UA SHALL support general web standards (e.g: HTTP, URI, HTML)</li>
@@ -241,11 +241,36 @@
 			<li>WAFG SHALL support [@@@] to …. </li>		
 			</ol>
 		</ol>
+		<li>Data collection & reporting</li>		
+		<ol>
+			<li>The WoT System shall support the reporting from a specific WoT Device or WoT Gateway or group of WoT Devices or group of IOT Gateways in the way requested by the WoT Application as listed below: </li>
+			<ol>
+				<li>a periodic reporting with the time period being defined by the WoT application,</li>
+				<li>or an on-demand reporting with two possible modes. One is an instantaneous collecting and reporting of data, the other one is a reporting of the data that were pre-recorded at the indicated specific time period.</li>
+				</ol>
+			</ol>
+		</ol>
+		<li>Remote control operation</li>
+		<ol>
+			<li>The WoT System shall support the capability to remotely change the state of a WoT Device e.g. enable or disable.</li>
+			</ol>
+		<li>Information collection & delivery to multiple applications</li>
+		<ol>
+			<li>The WoT System shall support the ability for multiple WoT Applications to interact with the same WoT Devices.</li>
+			</ol>
+		<li>Management of multiple WoT Devices</li>
+		<ol>
+			<li>The WoT Application shall be able to manage one or multiple WoT Devices, e.g. for information collection, control, either directly or through using capabilities in the WoT Service Capabilities”.</li>
+			</ol>
+		<li>WoT Devices description</li>
+		<ol>
+			<li>WoT characteristics of the WoT Device shall be either preconfigured in the WoT system or provided by the WoT Device to the WoT system; the characteristics provided by the WoT Device take precedence over the preconfigured characteristics.</li>
+			</ol>
 	</ul>
 	</section>
 
 	<section>
-	 <h3>Interface Definitions – WOT2</h3>
+	 <h3>Interface – WOT2</h3>
 	 <P>
 		This interface is exposed by the Service Resources. It is used by the WAFG to interact with the external service provider for using external service resources.
 	 	</P>
@@ -261,7 +286,7 @@
 	</section>
 	
 	<section> 
-	 <h3>Interface Definitions – WOT3</h3>
+	 <h3>Interface – WOT3</h3>
 	 <P>
 		This interface is exposed by the WAFG to Sensors internally/externally connecting with WoT Devices.
 	 	</P>
@@ -269,7 +294,7 @@
 	</section>
 	
 	<section>
-	 <h3>Interface Definitions – WOT4</h3>
+	 <h3>Interface – WOT4</h3>
 	 <P>
 		This interface is exposed by the WAFG to other WoT Device for realizing the collaboration between the WoT Devices. This interface is both exposed, and used, by WAFG.
 	</P>
@@ -277,7 +302,7 @@
 	</section>
 
 	<section>
-	 <h3>Interface Definitions – WOT5</h3>
+	 <h3>Interface – WOT5</h3>
 	<p>
 		This interface is exposed by the WAFG and is used by the Event Trigger to push notification to the WAFG.	 
 		</p>
