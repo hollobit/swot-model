@@ -138,7 +138,8 @@
        	The Simple WoT consists of mandatory component (a Thing as WoT enabled device) and interfaces exposed by those components. 
       </p>
 
-     <h3>Functional Components </h3>      
+     <section>
+     	</section><h3>Functional Components </h3>      
     <dl>
       <dt><code>WAFG(WoT Application Framework and Gateway)</code></dt>
       <dd>WAFG is a component resident in the WoT device and is the entry point to the WoT Enabler for all the requests coming from other component. The WoT Gateway exposes WOT-1, WOT-2, WOT-3, WOT-4 and WOT-5 interface.
@@ -172,7 +173,8 @@
     <dd>      	
 		It is a component resident in the network (outside the device). Through WoT-6 interface, Event Trigger is responsible to send push notifications. 
 	</dd>
-
+</section>
+	<section>
      <h3>Interface definition</h3>      
       <dt><code>WOT-1</code></dt>
 	  <dd>
@@ -194,6 +196,7 @@
       <dd>
 		This interface is exposed by the WAFG and is used by the Event Trigger to push notification to the WAFG.
 	</dd>
+	</section>
  	</section>
  	
 	<section>    	
@@ -245,25 +248,31 @@
 	<li>allow to synchronize Thing’s status and information.</li>
 	</ol>
 	<p>@@TBD</p>
-	 
+	</section>
+	
+	<section> 
 	 <h3>Interface Definitions – WOT3</h3>
 	 <P>
 		This interface is exposed by the WAFG to Sensors internally/externally connecting with WoT Devices.
 	 	</P>
 	<p>@@TBD</p>
-	 
+	</section>
+	
+	<section>
 	 <h3>Interface Definitions – WOT4</h3>
 	 <P>
 		This interface is exposed by the WAFG to other WoT Device for realizing the collaboration between the WoT Devices. This interface is both exposed, and used, by WAFG.
 	</P>
 	<p>@@TBD</p>
+	</section>
 
+	<section>
 	 <h3>Interface Definitions – WOT5</h3>
 	<p>
 		This interface is exposed by the WAFG and is used by the Event Trigger to push notification to the WAFG.	 
 		</p>
 	<p>@@TBD</p>
-		</section>
+	</section>
 	</section> 	
    </body>
 </html>
