@@ -23,13 +23,14 @@
         bugTracker: {
                   open: "https://github.com/hollobit/swot-model/issues?labels=json&page=1&state=open"
               ,   new:  "https://github.com/hollobit/swot-model/issues/new"
-              }
+              },
+         issueBase:    "https://github.com/hollobit/swot-model/issues/",
          otherLinks: [{
          key: "GitHub",
          data: [{
          value: "Project Pages branch on GitHub",
          href: "https://github.com/dret/W3C/tree/gh-pages/WoTIG" }]}
-         ],
+         ]
          };
          
       </script>
@@ -47,7 +48,7 @@
    <body>
       <section id="abstract">
          <p>	
-         	This document defines the simple web of things architecture model. 
+         This document defines the simple web of things architecture model. 
          </p>
       </section>
       <section id='sotd'>
