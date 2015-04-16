@@ -119,7 +119,10 @@
 	</section>
 
     <section>    	
-	<h2>Execution model of WoT Application</h2>
+    <h2>Architecuture Model</h2>
+    
+    <section>
+	<h3>Execution model of WoT Application</h3>
       <p>
        This is a running model of WoT gateway.        
       </p>
@@ -131,7 +134,8 @@
        The following diagram illustrates the Functional Components and Interfaces of WoT
       </p>
 	</section>
-	
+	</section>
+
 	<section>    	
 	<h2>Functional Components and Interfaces definition</h2>	
       <p>
@@ -139,7 +143,7 @@
       </p>
 
      <section>
-     	</section><h3>Functional Components </h3>      
+     	<h3>Functional Components </h3>      
     <dl>
       <dt><code>WAFG(WoT Application Framework and Gateway)</code></dt>
       <dd>WAFG is a component resident in the WoT device and is the entry point to the WoT Enabler for all the requests coming from other component. The WoT Gateway exposes WOT-1, WOT-2, WOT-3, WOT-4 and WOT-5 interface.
@@ -174,6 +178,7 @@
 		It is a component resident in the network (outside the device). Through WoT-6 interface, Event Trigger is responsible to send push notifications. 
 	</dd>
 </section>
+
 	<section>
      <h3>Interface definition</h3>      
       <dt><code>WOT-1</code></dt>
