@@ -14,6 +14,9 @@
          companyURL: "http://www.etri.re.kr" },
          {   name:       "Wonsuk Lee (이원석)",
          company:    "ETRI",
+         companyURL: "http://www.etri.re.kr" }, 
+         {   name:       "Hongki Cha (차홍기)",
+         company:    "ETRI",
          companyURL: "http://www.etri.re.kr" }
          ],
         wg:  "WoT Interest Group",
@@ -47,12 +50,11 @@
    <body>
       <section id="abstract">
          <p>	
-         This document defines the simple web of things architecture model. 
+				This document defines the simple web of things architecture model. 
          </p>
       </section>
       <section id='sotd'>
-      <p>
-        This specification is a proposal for building the High Level WoT Architecture model. 
+      <p>This specification is a proposal for building the High Level WoT Architecture model. 
       </p>
     </section>
 
@@ -127,7 +129,7 @@
       <p>
        This is a running model of WoT gateway.        
       </p>
-      <img src="./running-model.png" width="640" border=0>
+      <img src="./running-model.png" width="640" border=0 align=center>
 	</section>
 	
 	<section>    	
@@ -135,7 +137,7 @@
       <p>
        The following diagram illustrates the Functional Components and Interfaces of WoT
       </p>
-      <img src="./swot-model.png" width="800" border=0>
+      <img src="./swot-model.png" width="800" border=0  align=center>
 	</section>
 	</section>
 
