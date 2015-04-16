@@ -1,0 +1,2 @@
+# swot-model
+swot-model
