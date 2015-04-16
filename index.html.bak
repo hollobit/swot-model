@@ -133,134 +133,23 @@
 	</section>
 	
 	<section>    	
-	<h2>Functional Components and Interfaces definition</h2>	
+	<h2>Functional Components and Interfaces definition</h2>
       <p>
        	The Simple WoT consists of mandatory component (a Thing as WoT enabled device) and interfaces exposed by those components. 
       </p>
-
-     <h3>Functional Components </h3>      
     <dl>
       <dt><code>WAFG(WoT Application Framework and Gateway)</code></dt>
       <dd>WAFG is a component resident in the WoT device and is the entry point to the WoT Enabler for all the requests coming from other component. The WoT Gateway exposes WOT-1, WOT-2, WOT-3, WOT-4 and WOT-5 interface.
 		</dd>
-      <dt><code>UA(User Agent) </code></dt>
+      <dt><code></code>UA(User Agent) </code></dt>
 	  <dd>
 		A user agent is any software that retrieves, renders and facilitates end-user interaction with web content. User agents include web browsers, media players, plug-ins, extension and web applications that help in retrieving, rendering and interacting with web content. User Agent is a component resident in the network (outside the device). It has the responsibility for interacting bidirectionally with WoT Device by using WoT-1 interface exposed by the WoT Gateway. 
 	  	</dd>
-      <dt><code>Service Resources</code></dt>
+      <dt><code></code>Service Resources</code></dt>
 	  <dd>
 		Services resources(Cloud, Server, Web Resources) are the one of component resident in the network (outside the device) to provide external resources by using WoT-2 interface. 
 		</dd>
-      <dt><code>Sensors</code></dt>
-	  <dd>
-		A sensor is a small device that detects and responds to some type of input from the physical environment. Sensor is a component with WoT device (internally or externally) to exchange sensing information by using WoT-3 interface.  
-	</dd>
-		<ol>
-			<li>Passive sensor: TBD</li>
-			<li>Active sensor: TBD </li>
-		</ol>
-      <dt><code>other Thing (other WoT Devices)</code></dt>
-    <dd>      	
-		An external thing is another WoT device. It uses WOT-4 interface exposed by other WoT Devices for collaboration.
-	</dd>
-		<ol>
-		<li>Device Type1:  TBD</li>
-		<li>Device Type2:  TBD</li>
-		<li>Device Type3: TBD</li>
-	</ol>
-      <dt><code></code>Event Trigger </code></dt>
-    <dd>      	
-		It is a component resident in the network (outside the device). Through WoT-6 interface, Event Trigger is responsible to send push notifications. 
-	</dd>
-
-     <h3>Interface definition</h3>      
-      <dt><code>WOT-1</code></dt>
-	  <dd>
-	  	This interface is exposed by the WAFG to User Agent. It is used by the UA to interact with the WoT Devices for performing some core functionalities related to web of things application, covering: user authentication, authorization, WoT device management. 
-	  </dd>
-      <dt><code>WOT-2</code></dt>
-	  <dd>
-	  	This interface is exposed by the Service Resources. It is used by the WAFG to interact with the external service provider for using external service resources.
-	  </dd>
-      <dt><code>WOT-3</code></dt>
-	  <dd>
-	  	This interface is exposed by the WAFG to Sensors internally/externally connecting with WoT Devices. 
-	  </dd>
-      <dt><code>WOT-4</code></dt>
-      <dd>
-		This interface is exposed by the WAFG to other WoT Device for realizing the collaboration between the WoT Devices. This interface is both exposed, and used, by WAFG.
-	 </dd>
-      <dt><code>WOT-5</code></dt>
-      <dd>
-		This interface is exposed by the WAFG and is used by the Event Trigger to push notification to the WAFG.
-	</dd>
  	</section>
- 	
-	<section>    	
-	<h2>Functional Components and Interfaces definition</h2>	
-      <p>
-       	The .... 
-      </p>
 	
-	 <h3>Interface Definitions – WOT1</h3>
-	<p>This interface is exposed by the WAFG to User Agent. </p>
-	<ol>
-		<li>WAFG and UA SHALL support general web standards (e.g: HTTP, URI, HTML)</li>
-		<li>WAFG SHALL support web standard based User Interface </li>
-		<ol>
-			<li>Shall provide the offline connectivity</li>
-			<li>shall provide capabilities to start and monitor all of WoT application feature</li>
-			</ol>
-		</ol>
-		<li>WAFG SHALL support WoT Gateway functionality such as:	</li>
-		<ol>
-			<li>Connectivity down to sensors and existing controllers embedded in the device</li>
-			<li>Manageability (Device, Sensor, System) and related protocol </li>
-			<li>Security and privacy</li>
-			<li>WAFG may support remote management for fault recovery e.g. firmware update, quarantine device. After this operation of firmware update, the device may reboot to a known and consistent state</li>
-			</ol>
-		<li>WAFG MAY support WoT Gateway functionality for legacy business:</li>
-		<ol>
-		  <li>Connectivity up to the cloud and enterprise</li>
-		  <li>	WAFG SHALL further support the protocols defined in the following</li>
-•		 <ol>
-			<li>WAFG SHALL support [@@@] to …. </li>		
-			</ol>
-		</ol>
-	</ol>
-	 
-	 <h3>Interface Definitions – WOT2</h3>
-	 <P>
-		This interface is exposed by the Service Resources. It is used by the WAFG to interact with the external service provider for using external service resources.
-	 	</P>
-	 <p>
-	 	WOT-2 covers:
-	 </p>
-	 <ol>
-	<li>expose an open API to access and exchange data for integration with external service</li>
-	<li>Expose an external web resources</li>
-	<li>allow to synchronize Thing’s status and information.</li>
-	</ol>
-	<p>@@TBD</p>
-	 
-	 <h3>Interface Definitions – WOT3</h3>
-	 <P>
-		This interface is exposed by the WAFG to Sensors internally/externally connecting with WoT Devices.
-	 	</P>
-	<p>@@TBD</p>
-	 
-	 <h3>Interface Definitions – WOT4</h3>
-	 <P>
-		This interface is exposed by the WAFG to other WoT Device for realizing the collaboration between the WoT Devices. This interface is both exposed, and used, by WAFG.
-	</P>
-	<p>@@TBD</p>
-
-	 <h3>Interface Definitions – WOT5</h3>
-	<p>
-		This interface is exposed by the WAFG and is used by the Event Trigger to push notification to the WAFG.	 
-		</p>
-	<p>@@TBD</p>
-	
-	</section> 	
    </body>
 </html>
