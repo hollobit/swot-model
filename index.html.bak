@@ -127,7 +127,7 @@
       <p>
        This is a running model of WoT gateway.        
       </p>
-      <img src="./running-model.png" border=0>
+      <img src="./running-model.png" width="640" border=0>
 	</section>
 	
 	<section>    	
@@ -148,18 +148,18 @@
      <section>
      	<h3>Functional Components </h3>      
     <dl>
-      <dt><code>WAFG(WoT Application Framework and Gateway)</code></dt>
+      <dt>WAFG(WoT Application Framework and Gateway)</dt>
       <dd>WAFG is a component resident in the WoT device and is the entry point to the WoT Enabler for all the requests coming from other component. The WoT Gateway exposes WOT-1, WOT-2, WOT-3, WOT-4 and WOT-5 interface.
 		</dd>
-      <dt><code>UA(User Agent) </code></dt>
+      <dt>UA(User Agent)</dt>
 	  <dd>
 		A user agent is any software that retrieves, renders and facilitates end-user interaction with web content. User agents include web browsers, media players, plug-ins, extension and web applications that help in retrieving, rendering and interacting with web content. User Agent is a component resident in the network (outside the device). It has the responsibility for interacting bidirectionally with WoT Device by using WoT-1 interface exposed by the WoT Gateway. 
 	  	</dd>
-      <dt><code>Service Resources</code></dt>
+      <dt>Service Resources</dt>
 	  <dd>
 		Services resources(Cloud, Server, Web Resources) are the one of component resident in the network (outside the device) to provide external resources by using WoT-2 interface. 
 		</dd>
-      <dt><code>Sensors</code></dt>
+      <dt>Sensors</dt>
 	  <dd>
 		A sensor is a small device that detects and responds to some type of input from the physical environment. Sensor is a component with WoT device (internally or externally) to exchange sensing information by using WoT-3 interface.  
 		<ul>
@@ -167,7 +167,7 @@
 			<li>Active sensor: TBD </li>
 		</ul>
     </dd>
-	  <dt><code>other Thing (other WoT Devices)</code></dt>
+	  <dt>other Thing (other WoT Devices)</dt>
     <dd>      	
 		An external thing is another WoT device. It uses WOT-4 interface exposed by other WoT Devices for collaboration.
 		<ul>
@@ -176,7 +176,7 @@
 		<li>Device Type3: TBD</li>
 	</ul>
 	</dd>
-      <dt><code></code>Event Trigger </code></dt>
+    <dt>Event Trigger</dt>
     <dd>      	
 		It is a component resident in the network (outside the device). Through WoT-6 interface, Event Trigger is responsible to send push notifications. 
 	</dd>
