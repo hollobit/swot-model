@@ -219,7 +219,7 @@
  	<section>    	
 	 <h3>Interface – WOT1</h3>
 	<p>This interface is exposed by the WAFG to User Agent. </p>
-	<ul>
+	<ul> 
 		<li>WAFG and UA SHALL support general web standards (e.g: HTTP, URI, HTML)</li>
 		<li>WAFG SHALL support web standard based User Interface </li>
 		<ol>
@@ -249,7 +249,6 @@
 				<li>or an on-demand reporting with two possible modes. One is an instantaneous collecting and reporting of data, the other one is a reporting of the data that were pre-recorded at the indicated specific time period.</li>
 				</ol>
 			</ol>
-		</ol>
 		<li>Remote control operation</li>
 		<ol>
 			<li>The WoT System shall support the capability to remotely change the state of a WoT Device e.g. enable or disable.</li>
