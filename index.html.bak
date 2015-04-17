@@ -65,20 +65,41 @@
 		It identifies the functional components and defines the interface between among those components to effect the desired properties of the overall architecture. 
       </p>
 	<p>
-	Web of Things provide a standard means of internetworking between WoT resources, running on a variety of platforms and/or frameworks. 
-	</p>
-	</section>
-
-    <section class='informative'>
-	<h2>Definition</h2>
-	<p>
 	The World Wide Web uses relatively simple technologies with sufficient scalability, efficiency and utility that they have resulted in a remarkable information space of interrelated resources, growing across languages, cultures, and media.
 	</P>
 	<p>
 	The World Wide Web (WWW, or simply Web) is an information space in which the items of interest, referred to as resources, are identified by global identifiers called Uniform Resource Identifiers (URI).
 	</p>
+	<p>
+	Web of Things provide a standard means of internetworking between WoT resources, running on a variety of platforms and/or frameworks. 
+	</p>
+		<section>
+			<h3>Audience of this Document</h3>
+			<p>
+				This document is intended to inform discussions about issues of Web of Things architecture. The intended audience for this document includes:
+			</p>
+			<ul>
+				<li>Participants in W3C Activities</li>
+				<li>Other groups and individuals designing technologies to be integrated within the Web of Things</li>
+				<li>Implementers of IoT/WoT Product</li>
+				<li>IoT/WoT service developer</li>
+				</ul>	
+			</section>
+		<section>
+			<h3>Scope of this Document</h3>
+			<p>
+			This document presents the general architecture of the Web of Things.
+			</p>
+		</section> 
 	</section>
 
+  <section class='informative'>
+      <h2>Design Goals and Rationale</h2>
+      <p>
+      	SWOTA(Simple Web of Things Architecutre) satisfies the following design goals:
+      	</p>
+    </section>
+    
     <section>    	
 	<h2>Terminology</h2>
       <p>
@@ -122,6 +143,13 @@
 	</dL>
 	</section>
 
+    <section>    	
+    <h2>Conformance</h2>
+		<p>
+		The key words must, must not, required, shall, shall not, should, should not, recommended, not recommended, may, and optional in this specification have the meaning defined in [[RFC2119]].
+		</p>
+		</section>
+	
     <section>    	
     <h2>Architecuture Model</h2>
     
@@ -220,7 +248,7 @@
 	 <h3>Interface – WOT-1</h3>
 	<p>This interface is exposed by the WAFG to User Agent. </p>
 	<ul> 
-		<li>WAFG and UA SHALL support general web standards (e.g: HTTP, URI, HTML) [[!rfc2616]] [[!rfc3986]] [[!html5]]</li>
+		<li>WAFG and UA SHALL support general web standards (e.g: HTTP, URI, HTML) [[!rfc2616]] [[!rfc3986]] [[!rfc3987]] [[!html5]]</li>
 		<li>WAFG SHALL support web standard based User Interface </li>
 		<ul>
 			<li>Shall provide the offline connectivity</li>
