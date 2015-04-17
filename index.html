@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>Simple Web of Things Architecture</title>
+      <title>High-level Web of Things (WoT) Architecture Model</title>
       <meta charset="utf-8"></meta>
       <script src="http://www.w3.org/Tools/respec/respec-w3c-common" async="async" class="remove"></script>
       <script class="remove">
@@ -9,15 +9,14 @@
          specStatus: "unofficial",
          shortName:  "swot-model",
          editors: [
-         {   name:       "Jonghong Jeon (전종홍)",
+         {   name:       "Jonghong Jeon",
+         companyURL: "http://www.etri.re.kr", 
+         company:    "ETRI" },
+         {   name:       "Wonsuk Lee",
+         company:    "ETRI"}, 
+         {   name:       "Hongki Cha",
          company:    "ETRI",
-         companyURL: "http://www.etri.re.kr" },
-         {   name:       "Wonsuk Lee (이원석)",
-         company:    "ETRI",
-         companyURL: "http://www.etri.re.kr" }, 
-         {   name:       "Hongki Cha (차홍기)",
-         company:    "ETRI",
-         companyURL: "http://www.etri.re.kr" }
+         }
          ],
         wg:  "WoT Interest Group",
         wgURI: "http://www.w3.org/WoT/IG/", 
@@ -50,31 +49,31 @@
    <body>
       <section id="abstract">
          <p>	
-				This document defines the simple web of things architecture model. 
+				This document defines a High-level Web of Things (WoT) Architecture Model. 
          </p>
       </section>
       <section id='sotd'>
       <p>
-      	This specification is a proposal for building the High Level WoT Architecture model. 
+      	This specification is a proposal for building a High-level Web of Things (WoT) Architecture Model. 
       </p>
     </section>
 
     <section class='informative'>
       <h2>Introduction</h2>
 	<p>
-	The World Wide Web (WWW, or simply Web) uses relatively simple technologies with sufficient scalability, efficiency and utility that they have resulted in a remarkable information space of interrelated resources, growing across languages, cultures, and media.
+	The World Wide Web (WWW, or simply Web) uses relatively simple technologies with sufficient scalability, efficiency and usability. As a result, it has become a remarkable information space of interrelated resources, growing across languages, cultures, and media.
 	</P>
   <p>
-  The Web is used as a platform to deliver services to an end-user, the web enables business entities and applications to intercommunicate openly with each other over a network. The web has program language independent properties, uses message driven communications and easily bounds to different transport protocols. As a result, web technology allows the exposure of physical devices as resources on the web using a WoT approach. This kinds of WoT approach can provide a standard means of internetworking between WoT resources, running on a variety of platforms and/or frameworks.
+  The Web is used as a platform to deliver services to end-users and enables business entities and applications to intercommunicate openly with each other over a network. The web is language-independent, uses message-driven communications and easily bounds to different transport protocols. As a result, web technology allows the exposure of physical devices as resources on the web using a Web of Things (WoT) approach. This approach can provide a standard means of internetworking among WoT resources running on a variety of platforms and/or frameworks.
   </p>
   <p>
   	The Internet of Things (IoT) is a novel paradigm that is rapidly gaining ground in the scenario of modern wireless telecommunications. The basic idea of this concept is the pervasive presence around us of a variety of things or objects – such as Radio-Frequency IDentification (RFID) tags, sensors, actuators, mobile phones, etc. – which, through unique addressing schemes, are able to interact with each other and cooperate with their neighbors to reach common goals.
   	</p>
   <p>
-  As similar, in the emerging Web of Things, the Web is extended from its original document-centric design to an application layer for the real world. Real-world objects like consumer devices are integrated into the WWW by representing them as Web resources, which can be accessed using lightweight APIs based on the REST principle. 
+  As similar, in the emerging WoT, the Web is extended from its original document-centric design to an application layer for the real world. Real-world objects like consumer devices are integrated into the WWW by representing them as Web resources, which can be accessed using lightweight APIs based on the REST principle. 
  </p>   
  <p>
-  In spite of emerging WoT, overall proposed architecture at the initial stages of WoT research will have a severe bearing on the field itself and needs to be investigated. Most of the work relating to WoT architecture has been from the Web Services/SOA perspective or the wireless sensor network/IoT perspective. 
+  Inspide of emerging WoT, overall proposed architecture at the initial stages of WoT research will have a severe bearing on the field itself and needs to be investigated. Most of the work relating to WoT architecture has been from the Web Services/SOA perspective or the wireless sensor network/IoT perspective. 
  	</p>  
 	<p>
 	 
@@ -82,7 +81,7 @@
 		<section>
 			<h3>Audience of this Document</h3>
 			<p>
-				This document is intended to inform discussions about issues of Web of Things architecture. The intended audience for this document includes:
+				This document is intended to inform discussions about issues of High-level Web of Things (WoT) Architecture Model. The intended audience for this document includes:
 			</p>
 			<ul>
 				<li>Participants in W3C Activities</li>
@@ -94,7 +93,7 @@
 		<section>
 			<h3>Scope of this Document</h3>
 			<p>
-			This document presents the general architecture of the Web of Things.
+			This document presents the High-level Web of Things (WoT) Architecture Model.
 			</p>
 		</section> 
 	</section>
@@ -102,7 +101,7 @@
   <section class='informative'>
       <h2>Design Goals and Rationale</h2>
       <p>
-      	SWOTA(Simple Web of Things Architecutre) satisfies the following design goals:
+      	SWOTA(Simple Web of Things Architecture) satisfies the following design goals:
       	</p>
     </section>
     
@@ -135,7 +134,7 @@
 	With regard to the Internet of things, this is an object of the physical world (physical things) or the information world (virtual things), which is capable of being identified and integrated into communication networks.  [ITU-T Y.2060]
 	</dd>
 	 <dt><dfn title="URI" id="dfn-URI">URI</dfn></dt><dd>
- A simple and extensible means for identifying a resource. [[!rfc3986]]
+A simple and extensible means for identifying a resource. [[!rfc3986]]
 	</dd>
 	 <dt><dfn title="user agent" id="dfn-UA">user agent</dfn></dt><dd>
 	 A client within a device that performs rendering. Browsers are examples of user agents, as are web robots that automatically traverse the web collecting information. [[di-gloss]]
@@ -160,7 +159,7 @@
     <h2>Architecuture Model</h2>
     
     <section>
-	<h3>Execution model of WoT Application</h3>
+	<h3>Execution model of Web of Things (WoT) applications</h3>
       <p>
        This is a running model of WoT gateway.        
       </p>
@@ -168,22 +167,22 @@
 	</section>
 	
 	<section>    	
-	<h3>Simple Web of Things Architecture Model</h3>
+	<h3>Web of Things (WoT) Architecture Model</h3>
       <p>
-       The following diagram illustrates the Functional Components and Interfaces of WoT
+       The following diagram illustrates the functional components and interfaces of WoT.
       </p>
       <img src="./img/swot-model.png" width="800" border=0  align=center>
 	</section>
 	</section>
 
 	<section>    	
-	<h2>Functional Components and Interfaces definition</h2>	
+	<h2>Functional Components</h2>	
       <p>
-       	The Simple WoT consists of mandatory component (a Thing as WoT enabled device) and interfaces exposed by those components. 
+       	A Simple WoT consists of mandatory components (a Thing as WoT enabled device) and interfaces exposed by those components. 
       </p>
 
      <section>
-     	<h3>Functional Components </h3>      
+        
     <dl>
       <dt>WAFG(WoT Application Framework and Gateway)</dt>
       <dd>WAFG is a component resident in the WoT device and is the entry point to the WoT Enabler for all the requests coming from other component. The WoT Gateway exposes WOT-1, WOT-2, WOT-3, WOT-4 and WOT-5 interface.
@@ -194,14 +193,14 @@
 	  	</dd>
       <dt>Service Resources</dt>
 	  <dd>
-		Services resources(Cloud, Server, Web Resources) are the one of component resident in the network (outside the device) to provide external resources by using WoT-2 interface. 
+		Service resources (Cloud, Server, Web Resources) are one of the components residing in the network (outside the device) to provide external resources by using WoT-2 interface. 
 		</dd>
       <dt>Sensors</dt>
 	  <dd>
-		A sensor is a small device that detects and responds to some type of input from the physical environment. Sensor is a component with WoT device (internally or externally) to exchange sensing information by using WoT-3 interface.  
+		Sensors detect and respond to inputs from the physical environment, and exchange sensing information by using WoT-3 interface.  
 		<ul>
-			<li>Passive sensor: TBD</li>
-			<li>Active sensor: TBD </li>
+			<li>Passive sensors: TBD</li>
+			<li>Active sensors: TBD </li>
 		</ul>
     </dd>
 	  <dt>other Thing (other WoT Devices)</dt>
@@ -215,12 +214,21 @@
 	</dd>
     <dt>Event Trigger</dt>
     <dd>      	
-		It is a component resident in the network (outside the device). Through WoT-6 interface, Event Trigger is responsible to send push notifications. 
+		It is a component resident in the network (outside the device). Through WoT-6 interface, Event Trigger is responsible for sending push notifications. 
 	</dd>
 </section>
 
-	<section>
-     <h3>Interface definition</h3>      
+
+ 	</section>
+ 	
+	<section>    	
+	<h2>Interfaces</h2>	
+      <p>
+		This section identifies the functional components and defines the interface between among those components to affect desired properties of the overall architecture. 
+      </p>
+      
+      	<section>
+           
       <dt><code>WOT-1</code></dt>
 	  <dd>
 	  	This interface is exposed by the WAFG to User Agent. It is used by the UA to interact with the WoT Devices for performing some core functionalities related to web of things application, covering: user authentication, authorization, WoT device management. 
@@ -242,13 +250,6 @@
 		This interface is exposed by the WAFG and is used by the Event Trigger to push notification to the WAFG.
 	</dd>
 	</section>
- 	</section>
- 	
-	<section>    	
-	<h2>Functional Components and Interfaces definition</h2>	
-      <p>
-		This section identifies the functional components and defines the interface between among those components to effect the desired properties of the overall architecture. 
-      </p>
 	
  	<section>    	
 	 <h3>Interface – WOT-1</h3>
