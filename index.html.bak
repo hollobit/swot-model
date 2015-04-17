@@ -89,29 +89,29 @@
       	The role adopted by an application when it is retrieving and/or rendering resources or resource manifestations.  [W3C WACterms]
       </dd>
       <dt><dfn title="device" id="dfn-device">device</dfn></dt><dd>
-		An apparatus through which a user can perceive and interact with the web. [W3C dig loss]
+		An apparatus through which a user can perceive and interact with the web. [[di-gloss]]
 		NOTE – In the IoT, a piece of equipment with the mandatory capabilities of communication and the optional capabilities of sensing, actuation, data capture, data storage and data processing [ITU-T Y.2060]. 
 	</dd>
 	 <dt><dfn title="iot" id="dfn-iot">Internet of things (IoT)</dfn></dt><dd>
 		A global infrastructure for the information society, enabling advanced services by interconnecting (physical and virtual) things based on existing and evolving interoperable information and communication technologies.  [ITU-T Y.2060]
 	 </dd>
 	 <dt><dfn title="resource" id="dfn-resource">resource</dfn></dt><dd>
-	 The term "resource" is used in a general sense for whatever might be identified by a URI. [IETF RFC 3986]
+	 The term "resource" is used in a general sense for whatever might be identified by a URI. [[!rfc3986]]
  	</dd>
 	 <dt><dfn title="server" id="dfn-server">server</dfn></dt><dd>
 	The role adopted by an application when it is supplying resources or resource manifestations. [W3C WACterms]
 	</dd>
 	 <dt><dfn title="WWW" id="dfn-WWW">World Wide Web</dfn></dt><dd>
-	An information space in which the items of interest, referred to as resources, are identified by global identifiers called Uniform Resource Identifiers (URI). [b-W3C web arch]
+	An information space in which the items of interest, referred to as resources, are identified by global identifiers called Uniform Resource Identifiers (URI). [[!webarch]]
 	</dd>
 	 <dt><dfn title="thing" id="dfn-thing">thing</dfn></dt><dd>
 	With regard to the Internet of things, this is an object of the physical world (physical things) or the information world (virtual things), which is capable of being identified and integrated into communication networks.  [ITU-T Y.2060]
 	</dd>
 	 <dt><dfn title="URI" id="dfn-URI">URI</dfn></dt><dd>
- A simple and extensible means for identifying a resource. [b-IETF RFC 3986]
+ A simple and extensible means for identifying a resource. [[!rfc3986]]
 	</dd>
 	 <dt><dfn title="user agent" id="dfn-UA">user agent</dfn></dt><dd>
-	 A client within a device that performs rendering. Browsers are examples of user agents, as are web robots that automatically traverse the web collecting information. [b-W3C dig loss]
+	 A client within a device that performs rendering. Browsers are examples of user agents, as are web robots that automatically traverse the web collecting information. [[di-gloss]]
 	</dd>
 	 <dt><dfn title="web resource" id="dfn-wr">web resource</dfn></dt><dd>
 	A resource, identified by a URI, that is a member of the web core.  [b-W3C WACterms]
@@ -220,7 +220,7 @@
 	 <h3>Interface – WOT-1</h3>
 	<p>This interface is exposed by the WAFG to User Agent. </p>
 	<ul> 
-		<li>WAFG and UA SHALL support general web standards (e.g: HTTP, URI, HTML)</li>
+		<li>WAFG and UA SHALL support general web standards (e.g: HTTP, URI, HTML) [[!rfc2616]] [[!rfc3986]] [[!html5]]</li>
 		<li>WAFG SHALL support web standard based User Interface </li>
 		<ul>
 			<li>Shall provide the offline connectivity</li>
@@ -277,7 +277,7 @@
 	 	WOT-2 covers:
 	 </p>
 	 <ol>
-	<li>expose an open API to access and exchange data for integration with external service</li>
+	<li>expose an open API to access and exchange data for integration with external service [[!rfc7159]]</li>
 	<li>Expose an external web resources</li>
 	<li>allow to synchronize Thing’s status and information.</li>
 	</ol>
