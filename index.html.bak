@@ -146,7 +146,7 @@
     <section>    	
     <h2>Conformance</h2>
 		<p>
-		The key words must, must not, required, shall, shall not, should, should not, recommended, not recommended, may, and optional in this specification have the meaning defined in [[RFC2119]].
+		The key words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, NOT RECOMMENDED, MAY, and OPTIONAL in this specification have the meaning defined in [[RFC2119]].
 		</p>
 		</section>
 	
