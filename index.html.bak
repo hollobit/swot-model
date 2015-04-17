@@ -49,7 +49,7 @@
    </head>
    <body>
       <section id="abstract">
-         <p>	
+         <p>	
 				This document defines the simple web of things architecture model. 
          </p>
       </section>
@@ -65,7 +65,7 @@
 		It identifies the functional components and defines the interface between among those components to effect the desired properties of the overall architecture. 
       </p>
 	<p>
-	Web of Things provide a standard means of internetworking between WoT resources, running on a variety of platforms and/or frameworks. 
+	Web of Things provide a standard means of internetworking between WoT resources, running on a variety of platforms and/or frameworks. 
 	</p>
 	</section>
 
@@ -75,7 +75,7 @@
 	The World Wide Web uses relatively simple technologies with sufficient scalability, efficiency and utility that they have resulted in a remarkable information space of interrelated resources, growing across languages, cultures, and media.
 	</P>
 	<p>
-	The World Wide Web (WWW, or simply Web) is an information space in which the items of interest, referred to as resources, are identified by global identifiers called Uniform Resource Identifiers (URI).
+	The World Wide Web (WWW, or simply Web) is an information space in which the items of interest, referred to as resources, are identified by global identifiers called Uniform Resource Identifiers (URI).
 	</p>
 	</section>
 
@@ -188,15 +188,15 @@
 	<section>
      <h3>Interface definition</h3>      
       <dt><code>WOT-1</code></dt>
-	  <dd>
+	  <dd>
 	  	This interface is exposed by the WAFG to User Agent. It is used by the UA to interact with the WoT Devices for performing some core functionalities related to web of things application, covering: user authentication, authorization, WoT device management. 
 	  </dd>
       <dt><code>WOT-2</code></dt>
-	  <dd>
+	  <dd>
 	  	This interface is exposed by the Service Resources. It is used by the WAFG to interact with the external service provider for using external service resources.
 	  </dd>
       <dt><code>WOT-3</code></dt>
-	  <dd>
+	  <dd>
 	  	This interface is exposed by the WAFG to Sensors internally/externally connecting with WoT Devices. 
 	  </dd>
       <dt><code>WOT-4</code></dt>
