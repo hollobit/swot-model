@@ -446,13 +446,13 @@ A simple and extensible means for identifying a resource. [[!rfc3986]]
 			<li>The entity authenticating the peer may choose from different security strengths to ensure appropriate level of security.</li>
 			<li>Each service shall be able to perform authentication independently.</li>
 		</ul>
-		<li>WoT Device / WoT Gateway authentication</li>
+		<li>WoT Device / WoT Server authentication</li>
 		<ul>
-			<li>The WoT System shall be able to authenticate the WoT Device or WoT Gateway. For WoT Devices supporting authentication and connected via an WoT Gateway, the authentication may be performed directly to the WoT System or to the authenticated WoT Gateway. </li>
+			<li>The WoT System shall be able to authenticate the WoT Device or WoT Server. For WoT Devices supporting authentication and connected via an WoT Server, the authentication may be performed directly to the WoT System or to the authenticated WoT Server. </li>
 		</ul>
 		<li>Authentication of WoT service layer capabilities or WoT applications</li>
 		<ul>
-			<li>When there is a request for data or device access, the WoT Device or WoT Gateway should be able to mutually authenticate with the WoT Service Capabilities or WoT Applications from which request is received.</li>
+			<li>When there is a request for data or device access, the WoT Device or WoT Server should be able to mutually authenticate with the WoT Service Capabilities or WoT Applications from which request is received.</li>
 		</ul>
 		<li>Data transfer confidentiality</li>
 		<ul>
