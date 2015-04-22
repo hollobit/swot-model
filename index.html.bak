@@ -95,6 +95,13 @@
 	<p>
   @@TBD@@	 
 	</p>
+	
+		<div class="note">
+        <p>
+          This is a note on Introduction part. Here will add some text about what we need to WoT.
+        </p>
+		</div>
+		
 		<section>
 			<h3>Audience of this Document</h3>
 			<p>
@@ -463,6 +470,7 @@ A simple and extensible means for identifying a resource. [[!rfc3986]]
 		<ul>
 			<li>The WoT System shall be capable of protecting privacy.</li>
 		</ul>
+	</ul>
 	</p>
 	
 		<p>
