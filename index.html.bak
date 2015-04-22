@@ -275,7 +275,7 @@ A simple and extensible means for identifying a resource. [[!rfc3986]]
 	 <h3>Interface – WOT-1</h3>
 	<p>This interface is exposed by the WoT Server to User Agent. </p>
 	<ul>
-		<li>WoT Server SHALL support the principle of Web Architecture [[!webarch]]</li> 
+		<li>WoT Server SHALL support the design principle of Web Architecture Model [[!webarch]]</li> 
 		<li>WoT Server and UA SHALL support general web standards (e.g: HTTP, URI/IRI, HTML) [[!rfc2616]] [[!rfc3986]] [[!rfc3987]] [[!html5]]</li>
 		<ul>
 				<li>WoT Server SHOULD use secure HTTP connections (HTTPS) </li>
@@ -391,7 +391,7 @@ A simple and extensible means for identifying a resource. [[!rfc3986]]
           This is a note on WOT-4 interface
         </p>
         <p>
-          WoT-3 interface will describe the interfaces between WoT Devices and other WoT Devices.
+          WoT-3 interface will describe the interfaces between WoT Devices and other WoT Devices. It will cover the protocol like as HTTP and CoAP.  
         </p>
       </div>
 
@@ -414,6 +414,13 @@ A simple and extensible means for identifying a resource. [[!rfc3986]]
       </div>
 
 	</section>
+
+	<section>
+	 <h3>Security Considerations</h3>
+	<p>
+		@@TBD@@ 
+		</p>
+	</section> 
 	</section> 	
    </body>
 </html>
