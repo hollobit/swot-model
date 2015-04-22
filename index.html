@@ -181,7 +181,7 @@ A simple and extensible means for identifying a resource. [[!rfc3986]]
     <section>
 	<h3>Execution model of Web of Things (WoT) applications</h3>
       <p>
-       This is a running model of WoT gateway.        
+       This is a running model of WoT Server.        
       </p>
       <img src="./img/running-model.png" width="640" border=0 align=center>
 	</section>
@@ -204,12 +204,12 @@ A simple and extensible means for identifying a resource. [[!rfc3986]]
      <section>
         
     <dl>
-      <dt>WAFG(WoT Application Framework and Gateway)</dt>
-      <dd>WAFG is a component resident in the WoT device and is the entry point to the WoT Enabler for all the requests coming from other component. The WoT Gateway exposes WOT-1, WOT-2, WOT-3, WOT-4 and WOT-5 interface.
+      <dt>WoT Server</dt>
+      <dd>WoT Server is a component resident in the WoT device and is the entry point to the WoT Enabler for all the requests coming from other component. The WoT Server exposes WOT-1, WOT-2, WOT-3, WOT-4 and WOT-5 interface.
 		</dd>
       <dt>UA(User Agent)</dt>
 	  <dd>
-		A user agent is any software that retrieves, renders and facilitates end-user interaction with web content. User agents include web browsers, media players, plug-ins, extension and web applications that help in retrieving, rendering and interacting with web content. User Agent is a component resident in the network (outside the device). It has the responsibility for interacting bidirectionally with WoT Device by using WoT-1 interface exposed by the WoT Gateway. 
+		A user agent is any software that retrieves, renders and facilitates end-user interaction with web content. User agents include web browsers, media players, plug-ins, extension and web applications that help in retrieving, rendering and interacting with web content. User Agent is a component resident in the network (outside the device). It has the responsibility for interacting bidirectionally with WoT Device by using WoT-1 interface exposed by the WoT Server. 
 	  	</dd>
       <dt>Service Resources</dt>
 	  <dd>
@@ -251,54 +251,54 @@ A simple and extensible means for identifying a resource. [[!rfc3986]]
            
       <dt><code>WOT-1</code></dt>
 	  <dd>
-	  	This interface is exposed by the WAFG to User Agent. It is used by the UA to interact with the WoT Devices for performing some core functionalities related to web of things application, covering: user authentication, authorization, WoT device management. 
+	  	This interface is exposed by the WoT Server to User Agent. It is used by the UA to interact with the WoT Devices for performing some core functionalities related to web of things application, covering: user authentication, authorization, WoT device management. 
 	  </dd>
       <dt><code>WOT-2</code></dt>
 	  <dd>
-	  	This interface is exposed by the Service Resources. It is used by the WAFG to interact with the external service provider for using external service resources.
+	  	This interface is exposed by the Service Resources. It is used by the WoT Server to interact with the external service provider for using external service resources.
 	  </dd>
       <dt><code>WOT-3</code></dt>
 	  <dd>
-	  	This interface is exposed by the WAFG to Sensors internally/externally connecting with WoT Devices. 
+	  	This interface is exposed by the WoT Server to Sensors internally/externally connecting with WoT Devices. 
 	  </dd>
       <dt><code>WOT-4</code></dt>
       <dd>
-		This interface is exposed by the WAFG to other WoT Device for realizing the collaboration between the WoT Devices. This interface is both exposed, and used, by WAFG.
+		This interface is exposed by the WoT Server to other WoT Device for realizing the collaboration between the WoT Devices. This interface is both exposed, and used, by WoT Server.
 	 </dd>
       <dt><code>WOT-5</code></dt>
       <dd>
-		This interface is exposed by the WAFG and is used by the Event Trigger to push notification to the WAFG.
+		This interface is exposed by the WoT Server and is used by the Event Trigger to push notification to the WoT Server.
 	</dd>
 	</section>
 	
  	<section>    	
 	 <h3>Interface – WOT-1</h3>
-	<p>This interface is exposed by the WAFG to User Agent. </p>
+	<p>This interface is exposed by the WoT Server to User Agent. </p>
 	<ul> 
-		<li>WAFG and UA SHALL support general web standards (e.g: HTTP, URI, HTML) [[!rfc2616]] [[!rfc3986]] [[!rfc3987]] [[!html5]]</li>
-		<li>WAFG SHALL support web standard based User Interface </li>
+		<li>WoT Server and UA SHALL support general web standards (e.g: HTTP, URI, HTML) [[!rfc2616]] [[!rfc3986]] [[!rfc3987]] [[!html5]]</li>
+		<li>WoT Server SHALL support web standard based User Interface </li>
 		<ul>
 			<li>Shall provide the offline connectivity</li>
 			<li>shall provide capabilities to start and monitor all of WoT application feature</li>
 			</ul>
-		<li>WAFG SHALL support WoT Gateway functionality such as:	</li>
+		<li>WoT Server SHALL support WoT Server functionality such as:	</li>
 		<ul>
 			<li>Connectivity down to sensors and existing controllers embedded in the device</li>
 			<li>Manageability (Device, Sensor, System) and related protocol </li>
 			<li>Security and privacy</li>
-			<li>WAFG may support remote management for fault recovery e.g. firmware update, quarantine device. After this operation of firmware update, the device may reboot to a known and consistent state</li>
+			<li>WoT Server may support remote management for fault recovery e.g. firmware update, quarantine device. After this operation of firmware update, the device may reboot to a known and consistent state</li>
 			</ul>
-		<li>WAFG MAY support WoT Gateway functionality for legacy business:</li>
+		<li>WoT Server MAY support WoT Server functionality for legacy business:</li>
 		<ul>
 		  <li>Connectivity up to the cloud and enterprise</li>
-		  <li>	WAFG SHALL further support the protocols defined in the following</li>
+		  <li>	WoT Server SHALL further support the protocols defined in the following</li>
 			<ul>
-			<li>WAFG SHALL support [@@@] to …. </li>		
+			<li>WoT Server SHALL support [@@@] to …. </li>		
 			</ul>
 		</ul>
 		<li>Data collection & reporting</li>		
 		<ul>
-			<li>The WoT System SHALL support the reporting from a specific WoT Device or WoT Gateway or group of WoT Devices or group of IOT Gateways in the way requested by the WoT Application as listed below: </li>
+			<li>The WoT System SHALL support the reporting from a specific WoT Device or WoT Server or group of WoT Devices or group of IoT Gateways in the way requested by the WoT Application as listed below: </li>
 			<ul>
 				<li>a periodic reporting with the time period being defined by the WoT application,</li>
 				<li>or an on-demand reporting with two possible modes. One is an instantaneous collecting and reporting of data, the other one is a reporting of the data that were pre-recorded at the indicated specific time period.</li>
@@ -326,7 +326,7 @@ A simple and extensible means for identifying a resource. [[!rfc3986]]
 	<section>
 	 <h3>Interface – WOT-2</h3>
 	 <P>
-		This interface is exposed by the Service Resources. It is used by the WAFG to interact with the external service provider for using external service resources.
+		This interface is exposed by the Service Resources. It is used by the WoT Server to interact with the external service provider for using external service resources.
 	 	</P>
 	 <p>
 	 	WOT-2 covers:
@@ -342,7 +342,7 @@ A simple and extensible means for identifying a resource. [[!rfc3986]]
 	<section> 
 	 <h3>Interface – WOT-3</h3>
 	 <P>
-		This interface is exposed by the WAFG to Sensors internally/externally connecting with WoT Devices.
+		This interface is exposed by the WoT Server to Sensors internally/externally connecting with WoT Devices.
 	 	</P>
 	<p>@@TBD</p>
 	</section>
@@ -350,7 +350,7 @@ A simple and extensible means for identifying a resource. [[!rfc3986]]
 	<section>
 	 <h3>Interface – WOT-4</h3>
 	 <P>
-		This interface is exposed by the WAFG to other WoT Device for realizing the collaboration between the WoT Devices. This interface is both exposed, and used, by WAFG.
+		This interface is exposed by the WoT Server to other WoT Device for realizing the collaboration between the WoT Devices. This interface is both exposed, and used, by WoT Server.
 	</P>
 	<p>@@TBD</p>
 	</section>
@@ -358,7 +358,7 @@ A simple and extensible means for identifying a resource. [[!rfc3986]]
 	<section>
 	 <h3>Interface – WOT-5</h3>
 	<p>
-		This interface is exposed by the WAFG and is used by the Event Trigger to push notification to the WAFG.	 
+		This interface is exposed by the WoT Server and is used by the Event Trigger to push notification to the WoT Server.	 
 		</p>
 	<p>@@TBD</p>
 	</section>
