@@ -333,6 +333,18 @@ A simple and extensible means for identifying a resource. [[!rfc3986]]
 			<li>WoT characteristics of the WoT Device SHALL be either preconfigured in the WoT system or provided by the WoT Device to the WoT system; the characteristics provided by the WoT Device take precedence over the preconfigured characteristics.</li>
 			</ul>
 	</ul>
+
+	<p>@@TBD</p>
+	
+	      <div class="note">
+        <p>
+          This is a note on WOT-1 interface
+        </p>
+        <p>
+          WoT-1 interface will describe the protocol between WoT Server and UA. It will cover other web protocol like as WebRTC, SSE and Web notification. [[webrtc]] [[SSE-ed]] [[notifications]]
+        </p>
+      </div>
+
 	</section>
 
 	<section>

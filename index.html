@@ -430,8 +430,54 @@ A simple and extensible means for identifying a resource. [[!rfc3986]]
 	<section>
 	 <h3>Security Considerations</h3>
 	<p>
+	In this section we elaborate on the security requirements for the WoT System. We expand on the basic requirements of confidentiality, integrity, authentication, and authorization and provide specific examples of potential threats that the system should be protected against.
+	<ul>
+		<li>Authentication</li>
+		<ul>
+			<li>An entity requesting a service may authenticate the peer entity as part of setting up a service and maintaining a service.</li>
+			<li>The WoT system may support mutual authentication and one-way authentication.</li>
+			<li>The entity authenticating the peer may choose from different security strengths to ensure appropriate level of security.</li>
+			<li>Each service shall be able to perform authentication independently.</li>
+		</ul>
+		<li>WoT Device / WoT Gateway authentication</li>
+		<ul>
+			<li>The WoT System shall be able to authenticate the WoT Device or WoT Gateway. For WoT Devices supporting authentication and connected via an WoT Gateway, the authentication may be performed directly to the WoT System or to the authenticated WoT Gateway. </li>
+		</ul>
+		<li>Authentication of WoT service layer capabilities or WoT applications</li>
+		<ul>
+			<li>When there is a request for data or device access, the WoT Device or WoT Gateway should be able to mutually authenticate with the WoT Service Capabilities or WoT Applications from which request is received.</li>
+		</ul>
+		<li>Data transfer confidentiality</li>
+		<ul>
+			<li>The WoT System shall support appropriate confidentiality of the data exchange. A particular WoT application may or may not require the use of such confidentiality.</li>
+		</ul>
+		<li>Data integrity </li>
+		<ul>
+			<li>End points of the WoT System shall be able to verify the integrity of the data exchanged.</li>
+		</ul>
+		<li>Prevention of abuse of network connection</li>
+		<ul>
+			<li>WoT security solution should be such that it is not possible to illegally use the WoT Device for unintended applications.</li>
+		</ul>
+		<li>Privacy</li>
+		<ul>
+			<li>The WoT System shall be capable of protecting privacy.</li>
+		</ul>
+	</p>
+	
+		<p>
 		@@TBD@@ 
 		</p>
+		
+			      <div class="note">
+        <p>
+          This is a note on Security Considerations.
+        </p>
+        <p>
+          Security Considerations will describe the consideration of various security aspec. 
+        </p>
+      </div>
+
 	</section> 
 	</section> 	
    </body>
