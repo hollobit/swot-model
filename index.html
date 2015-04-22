@@ -274,8 +274,20 @@ A simple and extensible means for identifying a resource. [[!rfc3986]]
  	<section>    	
 	 <h3>Interface – WOT-1</h3>
 	<p>This interface is exposed by the WoT Server to User Agent. </p>
-	<ul> 
-		<li>WoT Server and UA SHALL support general web standards (e.g: HTTP, URI, HTML) [[!rfc2616]] [[!rfc3986]] [[!rfc3987]] [[!html5]]</li>
+	<ul>
+		<li>WoT Server SHALL support the principle of Web Architecture [[web-arch]]</li> 
+		<li>WoT Server and UA SHALL support general web standards (e.g: HTTP, URI/IRI, HTML) [[!rfc2616]] [[!rfc3986]] [[!rfc3987]] [[!html5]]</li>
+		<ul>
+				<li>WoT Server SHOULD use secure HTTP connections (HTTPS) </li>
+		</ul>
+		<li>WoT Server SHALL support RESTful architecture model </li>
+			<ul>
+				<li>WoT Server MUST support GET, POST, PUT, and DELETE HTTP verbs</li>
+				<li>WoT Server MUST implement HTTP status codes 200, 400, 500</li>
+				<li>WoT Server SHOULD support 	additional HTTP status codes as needed</li>
+				<li>WoT Server SHALL support UTF8 encoding for requests and responses </li>
+			</ul>
+		<li>WoT Server SHALL support JSON as default representation </li>
 		<li>WoT Server SHALL support web standard based User Interface </li>
 		<ul>
 			<li>Shall provide the offline connectivity</li>
@@ -298,7 +310,7 @@ A simple and extensible means for identifying a resource. [[!rfc3986]]
 		</ul>
 		<li>Data collection & reporting</li>		
 		<ul>
-			<li>The WoT System SHALL support the reporting from a specific WoT Device or WoT Server or group of WoT Devices or group of IoT Gateways in the way requested by the WoT Application as listed below: </li>
+			<li>The WoT Server SHALL support the reporting from a specific WoT Device or WoT Server or group of WoT Devices or group of IoT Gateways in the way requested by the WoT Application as listed below: </li>
 			<ul>
 				<li>a periodic reporting with the time period being defined by the WoT application,</li>
 				<li>or an on-demand reporting with two possible modes. One is an instantaneous collecting and reporting of data, the other one is a reporting of the data that were pre-recorded at the indicated specific time period.</li>
@@ -306,11 +318,11 @@ A simple and extensible means for identifying a resource. [[!rfc3986]]
 			</ul>
 		<li>Remote control operation</li>
 		<ul>
-			<li>The WoT System SHALL support the capability to remotely change the state of a WoT Device e.g. enable or disable.</li>
+			<li>The WoT Server SHALL support the capability to remotely change the state of a WoT Device e.g. enable or disable.</li>
 			</ul>
 		<li>Information collection & delivery to multiple applications</li>
 		<ul>
-			<li>The WoT System SHALL support the ability for multiple WoT Applications to interact with the same WoT Devices.</li>
+			<li>The WoT Server SHALL support the ability for multiple WoT Applications to interact with the same WoT Devices.</li>
 			</ul>
 		<li>Management of multiple WoT Devices</li>
 		<ul>
