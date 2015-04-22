@@ -275,7 +275,7 @@ A simple and extensible means for identifying a resource. [[!rfc3986]]
 	 <h3>Interface – WOT-1</h3>
 	<p>This interface is exposed by the WoT Server to User Agent. </p>
 	<ul>
-		<li>WoT Server SHALL support the principle of Web Architecture [[web-arch]]</li> 
+		<li>WoT Server SHALL support the design principle of Web Architecture Model [[!webarch]]</li> 
 		<li>WoT Server and UA SHALL support general web standards (e.g: HTTP, URI/IRI, HTML) [[!rfc2616]] [[!rfc3986]] [[!rfc3987]] [[!html5]]</li>
 		<ul>
 				<li>WoT Server SHOULD use secure HTTP connections (HTTPS) </li>
@@ -349,6 +349,16 @@ A simple and extensible means for identifying a resource. [[!rfc3986]]
 	<li>allow to synchronize Thing’s status and information.</li>
 	</ol>
 	<p>@@TBD</p>
+	
+	      <div class="note">
+        <p>
+          This is a note on WOT-2 interface
+        </p>
+        <p>
+          WoT-2 interface will describe the protocol between WoT Server and other external Server/Cloud/Open API and web resources.
+        </p>
+      </div>
+
 	</section>
 	
 	<section> 
@@ -357,6 +367,16 @@ A simple and extensible means for identifying a resource. [[!rfc3986]]
 		This interface is exposed by the WoT Server to Sensors internally/externally connecting with WoT Devices.
 	 	</P>
 	<p>@@TBD</p>
+
+	      <div class="note">
+        <p>
+          This is a note on WOT-3 interface
+        </p>
+        <p>
+          WoT-3 interface will describe the protocol between WoT Device and Sensor/HW capabilities. It will cover the peripheral interconnects, whether they are I2C, SPI, USB, UARTs, Bluetooth, whatever 
+        </p>
+      </div>
+
 	</section>
 	
 	<section>
@@ -365,6 +385,16 @@ A simple and extensible means for identifying a resource. [[!rfc3986]]
 		This interface is exposed by the WoT Server to other WoT Device for realizing the collaboration between the WoT Devices. This interface is both exposed, and used, by WoT Server.
 	</P>
 	<p>@@TBD</p>
+
+	      <div class="note">
+        <p>
+          This is a note on WOT-4 interface
+        </p>
+        <p>
+          WoT-3 interface will describe the interfaces between WoT Devices and other WoT Devices.
+        </p>
+      </div>
+
 	</section>
 
 	<section>
@@ -373,6 +403,16 @@ A simple and extensible means for identifying a resource. [[!rfc3986]]
 		This interface is exposed by the WoT Server and is used by the Event Trigger to push notification to the WoT Server.	 
 		</p>
 	<p>@@TBD</p>
+
+	      <div class="note">
+        <p>
+          This is a note on WOT-5 interface
+        </p>
+        <p>
+          WoT-5 interface will describe the one-way protocol similar as push notification, MQTT and other subscription base protocols.  
+        </p>
+      </div>
+
 	</section>
 	</section> 	
    </body>
