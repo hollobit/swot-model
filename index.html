@@ -138,18 +138,11 @@
        This document uses the following terms defined elsewhere:
       </p>
 	<dl>
-      <dt><dfn title="client" id="dfn-client">Client</dfn></dt><dd>
-      	The role adopted by an application when it is retrieving and/or rendering resources or resource manifestations.  [W3C WACterms]
-      </dd>
-      <dt><dfn title="device" id="dfn-device">Device</dfn></dt><dd>
-		An apparatus through which a user can perceive and interact with the web. [[di-gloss]]
-		NOTE – In the IoT, a piece of equipment with the mandatory capabilities of communication and the optional capabilities of sensing, actuation, data capture, data storage and data processing [ITU-T Y.2060]. 
-	</dd>
 	 <dt><dfn title="iot" id="dfn-iot">Internet of things (IoT)</dfn></dt><dd>
 		A global infrastructure for the information society, enabling advanced services by interconnecting (physical and virtual) things based on existing and evolving interoperable information and communication technologies.  [ITU-T Y.2060]
 	 </dd>
 	 <dt><dfn title="resource" id="dfn-resource">Resource</dfn></dt><dd>
-	 The term "resource" is used in a general sense for whatever might be identified by a URI. [[!rfc3986]]
+	 Anything that might be identified by a URI or IRI [[!webarch]]
  	</dd>
 	 <dt><dfn title="server" id="dfn-server">Server</dfn></dt><dd>
 	The role adopted by an application when it is supplying resources or resource manifestations. [W3C WACterms]
@@ -158,16 +151,22 @@
 	With regard to the Internet of things, this is an object of the physical world (physical things) or the information world (virtual things), which is capable of being identified and integrated into communication networks.  [ITU-T Y.2060]
 	</dd>
 	 <dt><dfn title="URI" id="dfn-URI">URI</dfn></dt><dd>
-A simple and extensible means for identifying a resource. [[!rfc3986]]
+	A simple and extensible means for identifying a resource. [[!rfc3986]]
 	</dd>
 	 <dt><dfn title="user agent" id="dfn-UA">User Agent</dfn></dt><dd>
-	 A client within a device that performs rendering. Browsers are examples of user agents, as are web robots that automatically traverse the web collecting information. [[di-gloss]]
+	 One type of Web agent; a piece of software acting on behalf of a person. Browsers are examples of user agents, as are web robots that automatically traverse the web collecting information. [[di-gloss]] [[webarch]]
+	</dd>
+	<dt><dfn titile="web agent" id="dfn-WA">Web agent</dfn></dt><dd>
+	A person or a piece of software acting on the information space on behalf of a person, entity, or process. [[!webarch]]	
 	</dd>
 	 <dt><dfn title="web of tings" id="dfn-wot">Web of Things (WoT)</dfn></dt><dd>
 	A way to realize the IoT where (physical and virtual) things are connected and controlled through the World Wide Web.  [ITU-T Y.2063]
 	</dd>
-	 <dt><dfn title="web resource" id="dfn-wr">Web resource</dfn></dt><dd>
-	A resource, identified by a URI, that is a member of the web core.  [b-W3C WACterms]
+	<dt><dfn title="WoT Client" id="dfn-wot-client">WoT Client</dfn></dt><dd>
+	a logical entity that accesses an WoT Resource on an WoT Server	
+	</dd>
+	<dt><dfn title="WoT Functionality" id="dfn-wot-functionality">WoT Functionality</dfn></dt><dd>
+	the base/core functionality contained in any WoT Device	
 	</dd>
 	 <dt><dfn title="WWW" id="dfn-WWW">World Wide Web</dfn></dt><dd>
 	An information space in which the items of interest, referred to as resources, are identified by global identifiers called Uniform Resource Identifiers (URI). [[!webarch]]
@@ -211,6 +210,10 @@ A simple and extensible means for identifying a resource. [[!rfc3986]]
      <section>
         
     <dl>
+      <dt>WoT Device</dt>
+      <dd>
+      	a WoT device is a "Thing" which enabled WoT connectivity. a “Thing” in Web of Things (WoT) can be any object that has a unique identifier and which can send/receive web resources (including information and data) over a network. WoT devices are connected any devices to the Web and provide information about themselves or about their surroundings (e.g. information sensed by the connected sensors) over a network (to other devices or servers/storage) or allow actuation upon the physical entities/environment around them remotely.
+      </dd>
       <dt>WoT Server</dt>
       <dd>WoT Server is a component resident in the WoT device and is the entry point to the WoT Enabler for all the requests coming from other component. The WoT Server exposes WOT-1, WOT-2, WOT-3, WOT-4 and WOT-5 interface.
 		</dd>
